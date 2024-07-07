@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>StopWatch</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="mainCon">
+        <div id="con" >
+         <h1> StopWatch</h1>
+            <div id="timeSec"> 
+               <input name="m" type="text" value="00" class="time" id="min" disabled>
+               <span>:</span>
+               <input name="s" type="text" value="00" class="time" id="sec" disabled >
+              <span>:</span>
+               <input name="ms" type="text" value="00" class="time" id="minSec" disabled>
+               
+            </div>
+            
+             <div id="lapList" >
+             
+               <h2>Laps </h2>
+               <ol id="list">
+              
+               </ol>
+            </div>
+            
+            <div id="btnSec" >
+             <button style="opacity:0.5" disabled class="btns" id="reset">
+              <img src="./buttons/reset.png" alt="reset">
+             </button>
+             <button class="btns" id="start">
+               <img src="./buttons/start.png" alt="start">
+             </button>
+             <button style="display:none" class="btns" id="pause">
+               <img src="./buttons/pause.png" alt="pause">
+             </button>
+             <button style="opacity:0.5" disabled  class="btns" id="lap" >
+              
+              <img src="./buttons/lap.png" alt="lap">              
+             </button>
+            </div>
+           
+        </div>
+    </div>
+  
+  
+  <!-- js -->
+  <script src="main.js"></script>
+</body>
+</html>
